@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+}
+
+.upload-section {
+  margin: 30px 0;
+  padding: 20px;
+  border: 2px dashed #61dafb;
+  border-radius: 10px;
+  background-color: rgba(97, 218, 251, 0.1);
+}
+
+.file-info {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.file-info p {
+  margin: 5px 0;
+}
+
+.process-button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.process-button:hover:not(:disabled) {
+  background-color: #21a9c7;
+}
+
+.process-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.loading {
+  margin: 30px 0;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #61dafb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.results {
+  margin-top: 30px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.result-section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  border-left: 4px solid #61dafb;
+}
+
+.result-section h3 {
+  color: #61dafb;
+  margin-top: 0;
+}
+
+.extracted-text {
+  margin-top: 15px;
+}
+
+.extracted-text pre {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+input[type="file"] {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
